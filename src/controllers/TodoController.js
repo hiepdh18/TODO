@@ -6,8 +6,11 @@
 // - Delete todo (`/api/deleteTodo`)
 // - Delete all completed todos (`/api/clearCompleted`)
 
-exports.createTodo = () => {};
-exports.updateTodo = () => {};
-exports.getTodoList = () => {};
-exports.deleteTodo = () => {};
-exports.clearCompleted = () => {};
+// id, title, completed
+exports.createTodo = (req, res) => {
+
+};
+exports.updateTodo = (req, res) => {};
+exports.getTodoList = (req, res) => {};
+exports.deleteTodo = (req, res) => {};
+exports.clearCompleted = (req, res) => {};
