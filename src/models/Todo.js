@@ -18,10 +18,10 @@ exports.insert = todo => {
  * @return {todo | false }
  */
 exports.updateById = todo => {
-    const foundTodo = todos.find(t => t.id === todo.id); // return todo or undifined
-    if(foundTodo) {
-        foundTodo = {...todo};
-        return foundTodo;
+    let todoIndex = todos.findIndex(t => t.id === todo.id); // return todo or undifined
+    if(todoIndex != -1) {
+        todos[todoIndex] = {...todos[todoIndex], ...todo};
+        return todos[todoIndex];
     } else {
         return false;
     }
