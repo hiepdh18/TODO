@@ -1,0 +1,18 @@
+{
+  "name": "@todo/backend",
+  "version": "1.0.0",
+  "description": "todo App Express",
+  "main": "index.js",
+  "author": "hiepdh",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-list-endpoints": "^5.0.0"
+  },
+  "scripts": {
+    "serve": "nodemon src/app.js"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
